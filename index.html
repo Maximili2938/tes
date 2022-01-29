@@ -1,18 +1,69 @@
-<!DOCTYPE html>
+public class Kotlin implements CommandExecutor {
 
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
-</head>
+    private final ArrayList<Player> list_of_players = new ArrayList<>();
 
-<body>
+    public Kotlin(Mason plugin){
+    }
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+    @Override
+    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
-</body>
-</html>
+        Bukkit player;
+        if (!(sender instanceof Player)) {
+            Player p = null;
+            assert false;
+            Player player = null;
+            if (p.hasPermission("flying")) {
+                p = (Player) sender;
+                Player player = (Player) sender;
+                assert false;
+                Player player = null;
+                p = player;
+                if (p.isFlying()) {
+                    player = (Player) sender;
+                    if (list_of_players.contains(player)) {
+                        p.setAllowFlight(false);
+                        p.setFlying(false);
+                        p.sendMessage("§cВы выключили режим полета.");
+                        p.sendTitle("§cВы выключили режим полета.", "", 10, 20, 3);
+                        return true;
+                        {
+                            if (p.isFlying()) {
+                                Player player1 = (Player) sender;
+                                p.setAllowFlight(true);
+                                p.setFlying(false);
+                            }{
+                                if (list_of_players.contains(Player)){
+                                    p.setAllowFlight(false);
+                                    p.sendRawMessage("hello");
+                                    return true;
+                                }
+                        }
+                        }
+                } else if (!list_of_players.contains(player)) {
+                    Player player1 = (Player) sender;
+                    p = (Player) sender;
+                    list_of_players.add(player);
+                    p.setAllowFlight(true);
+                    p.setFlying(true);
+                    p.sendMessage("§7Вы включили режим полета.");
+                    p.sendTitle("§lВы включили режим полета.", "", 10, 20, 3);
+                }
+            }
+            Player player1 = (Player) sender;
+        }else (Bukkit.getAllowFlight()){
+            {
+                Player player1 = (Player) sender;
+                Player p = (Player) sender;
+                p.sendMessage("§cУ вас нет прав.");
+                p.sendTitle("§c§lУ вас нет прав.", "", 10, 20, 3);
+            }
+        return false;
+    }
+        return true;
+
+    StructureGrowEvent getEvent;
+        Object e;
+            return false;
+    }
